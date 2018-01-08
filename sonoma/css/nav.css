@@ -1,0 +1,52 @@
+nav li{
+  background-color: black;
+  padding: 10px;
+  color: white;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+nav li{
+  flex-grow: 1;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+nav li:nth-last-child(2) {
+  background-color: midnightblue;
+  border-left-color: white;
+  border-left: solid 1px;
+}
+
+.nav li:last-child {
+  display: none;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  nav ul{
+    flex-direction: column;
+  }
+
+  .nav li:last-child {
+    display: block;
+  }
+
+  .nav li:not(:last-child) {
+    display: none;
+  }
+
+  .nav.responsive li {
+    display: block;
+    text-align: left;
+  }
+
+}

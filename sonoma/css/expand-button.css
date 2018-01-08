@@ -1,0 +1,45 @@
+
+.expandable{
+  padding-bottom: 5px;
+}
+
+.expand-btn:focus{
+  outline: none;
+}
+
+.expand-btn{
+  background-color: transparent;
+  border: none;
+  color: grey;
+  padding: 0px;
+  font-size: 14px;
+  font-weight: 900;
+  margin: 5px;
+  margin-left: 0px;
+  font-family: serif;
+  cursor: pointer;
+}
+
+.expand-btn span{
+  font-family: serif;
+}
+
+.expand {
+  height: auto;
+  -webkit-transition: max-height 3s;
+  transition: max-height 3s;
+  margin-left: 17px;
+}
+
+.collapsed {
+  height: 0px;
+  overflow:hidden;
+}
+
+.arrow-right::before {
+  content: '\25ba  COLLAPSED';
+}
+
+.arrow-down::before {
+  content: '\25bc  EXPANDED';
+}

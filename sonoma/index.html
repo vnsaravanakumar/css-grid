@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Williams Sonoma</title>
+</head>
+<body>
+  <div class="container">
+    <header class="page-header">
+        <div>WILLIAMS</div>
+        <div>SONOMA</div>
+        <hr>
+        <div>CALIFORNIA</div>
+    </header>
+
+    <nav class="nav">
+      <ul class="nav-container">
+        <li>COOKWARE</li>
+        <li>COOKS' TOOLS</li>
+        <li>CUTLERY</li>
+        <li>ELECTRICS</li>
+        <li>BAKEWARE</li>
+        <li>FOOD</li>
+        <li>TABLETOP & BAR</li>
+        <li>HOMEKEEPING</li>
+        <li>OUTDOOR</li>
+        <li>SALE</li>
+        <li>WILLIAM-SONOMA HOME</li>
+        <li class="icon">&#9776;</li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section>
+        <ul class="breadcrumb">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Homekeeping</a></li>
+          <li><a href="#">Aprons</a></li>
+          <li><a href="#">Adult Aprons</a></li>
+          <li>Williams-Sonoma Classic Apron, French Blue</li>
+        </ul>
+      </section>
+      <section class="main-content">
+        <div class="product-image">
+          <div id="product-large-image"><img src="assets/product-large-a.jpg" alt="Hand Bag"></div>
+          <div class="product-small-images-list">
+            <div class="product-small-image selected-image" data-large="assets/product-large-a.jpg"><img src="assets/product-small-a.jpg" alt="Hand Bag"></div>
+            <div class="product-small-image" data-large="assets/product-large-b.jpg"><img src="assets/product-small-b.jpg" alt="Hand Bag"></div>
+            <div class="product-small-image" data-large="assets/product-large-c.jpg"><img src="assets/product-small-c.jpg" alt="Hand Bag"></div>
+            <div class="product-small-image" data-large="assets/product-large-d.jpg"><img src="assets/product-small-d.jpg" alt="Hand Bag"></div>
+          </div>
+        </div>
+        <div class="product-description">
+          <h1>Williams-Sonoma Classic Apron, French Blue</h1>
+          <p>A generously sized apron is a necessary in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</p>
+          <ul>
+            <li>Durable 100% cotton construction.</li>
+            <li>Adjustable neckband ensures a good fit.</li>
+            <li>Roomy front pockets hold small tools.</li>
+            <li>Machine-wash.</li>
+          </ul>
+          <div>
+            <h1><data class="money" value="19.95">$19.95</data></h1>
+            <div><input type="number" id="quantity" min="0" max="999"></div>
+            <button id="addToCartBtn" class="button"><span class="arrow-right-after">ADD TO CART</span></button>
+          </div>
+          <hr class="background-black">
+          <div class="expandable">
+            <button class="expand-btn"><span class="arrow arrow-right"></span></button>
+            <div class="expand collapsed">A generously sized apron is a necessary in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</div>
+          </div><hr>
+          <div class="expandable">
+            <button class="expand-btn"><span class="arrow arrow-right"></span></button>
+            <div class="expand collapsed">A generously sized apron is a necessary in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</div>
+          </div><hr>
+          <div class="expandable">
+            <button class="expand-btn"><span class="arrow arrow-right"></span></button>
+            <div class="expand collapsed">A generously sized apron is a necessary in any kitchen, and ours will brighten yours with lively color. Sewn of thick cotton, it can be personalized or monogrammed with up to nine characters, all the same height, embroidered in your choice of color. An apron of this quality makes a welcome gift for any cook.</div>
+          </div><hr class="background-black">
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p><small>&copy;2016 Williams-Sonoma Inc., All Rights Reserved | Terms and Conditions (Updated March 2016) | Privacy Policy | Legal Statement</small></p>
+    </footer>
+  </div>
+  <!-- Modal content -->
+  <div id="addCartModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <header class="modal-header"></header>
+      <p id="display-text"></p>
+    </div>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+header.page-header {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.page-header div {
+  font-family: serif;
+  font-size: xx-large
+}
+
+.page-header hr {
+  width: 100px;
+}
+
+.page-header div:last-of-type {
+  font-size: x-SMALL;
+  font-family: sans-serif;
+  letter-spacing: 4px;
+  font-weight: bold;
+}

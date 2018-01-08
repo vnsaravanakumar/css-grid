@@ -1,0 +1,29 @@
+.container{
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+
+.page-header{
+  grid-area: header;
+  align-self: stretch;
+}
+
+.nav{
+  grid-area: nav;
+  align-self: stretch;
+}
+
+.main{
+  grid-area: main;
+  padding: 10px;
+}
+
+.footer{
+  grid-area: footer;
+}
