@@ -1,6 +1,7 @@
 (function(){
   var modal = document.querySelector('#addCartModal');
   var modalHeader = document.querySelector('#addCartModal .modal-header');
+  var quantity = document.querySelector("#quantity");
 
   function expandClickHandler(el){
     let arrowEl = el.currentTarget.querySelector("span");
@@ -21,7 +22,6 @@
 
   // When the user clicks the button, open the modal
   function addCartHandler(){
-    let quantity = document.querySelector("#quantity");
     if(quantity.value !== "" && quantity.value > 0){
       document.querySelector("#display-text").innerHTML = "Item Added to the cart successfully !!";
       modalHeader.innerHTML = "Success";
