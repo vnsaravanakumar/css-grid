@@ -20,7 +20,7 @@
   }
 
   // When the user clicks the button, open the modal
-  function addCartHandler(el){
+  function addCartHandler(){
     let quantity = document.querySelector("#quantity");
     if(quantity.value !== "" && quantity.value > 0){
       document.querySelector("#display-text").innerHTML = "Item Added to the cart successfully !!";
